@@ -4,5 +4,5 @@ COPY . /cloudProject
 RUN apk update && apk add postgresql-dev gcc python3-dev musl-dev
 Run pip install psycopg2-binary
 Run pip install -U -r requirements.txt 
-EXPOSE 8080 9042 
+EXPOSE 80
 CMD ["python" , "main.py"]
